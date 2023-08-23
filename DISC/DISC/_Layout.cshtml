@@ -1,0 +1,21 @@
+﻿@page "/player/{playerName}"
+@{
+    string apiKey = "YOUR_API_KEY"; // Insert your actual API key here
+    var _bungieApiClient = new BungieApiClient(apiKey);
+    var playerName = @RouteData.Values["playerName"].ToString();
+    var playerInfo = await _bungieApiClient.GetPlayerInfoAsync(playerName);
+    var playerData = JsonConvert.DeserializeObject<PlayerResponse>(playerInfo);
+};
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Player Information</title>
+</head>
+<body>
+    <h1>Player Information</h1>
+    @if (playerData != null && playerData.Players.Count > 0)
+    {
+        <p>Membership ID: @playerData.Players[0].MembershipId</p>
+    }
+   
