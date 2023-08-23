@@ -1,4 +1,5 @@
-
+using System.Net.Http;
+using System.Collections.Generic;
 using Newtonsoft.Json;
 using System;
 using System.Threading.Tasks;
@@ -32,7 +33,7 @@ public class BungieApiClient
     }
 
 
-    public async Task<string?> GetPlayerInfoAsync(string playerName)
+    public async Task<string> GetPlayerInfoAsync(string playerName)
     {
         string apiUrl = $"https://www.bungie.net/Platform/Destiny2/SearchDestinyPlayer/-1/{playerName}/";
         HttpResponseMessage response = await _httpClient.GetAsync(apiUrl);
@@ -41,22 +42,23 @@ public class BungieApiClient
             return await response.Content.ReadAsStringAsync();
         }
         return null;
+
     }
 }
 
 
 
 
-public class PlayerResponse
+public class MyPlayerResponse
 {
     [JsonProperty("Response")]
-    public List<PlayerData> Players { get; set; }
+    public required List<PlayerData> Players { get; set; }
 }
 
 public class PlayerData
 {
     [JsonProperty("membershipId")]
-    public string MembershipId { get; set; }
+    public required string MembershipId { get; set; }
 
     // Add other properties as needed
 }

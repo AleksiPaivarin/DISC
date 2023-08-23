@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "EvyHW/S3tQouXiFPTfkcGE1dvhzye+epyZgTnFJRQFxHnjKnOB8wb/dfZxkiHSEqAd7da28AE2KSnN7ygIX/7A==",
+  "dgSpecHash": "PChU/rllAGrO6GFHLpO69cndLGIO4mFVObYU6C64C+/2diPh7iqUhdjR1l2SgWBsUR1FLjUug7vbWWggj3tRsg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Aleksi\\Desktop\\Koodailuprojekti\\DISC\\DISC\\DISC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Aleksi\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
-    "C:\\Users\\Aleksi\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Aleksi\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Aleksi\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\Aleksi\\.nuget\\packages\\newtonsoft.json\\9.0.1\\newtonsoft.json.9.0.1.nupkg.sha512",
     "C:\\Users\\Aleksi\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",

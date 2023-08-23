@@ -26,3 +26,5 @@ C:\Users\Aleksi\Desktop\Koodailuprojekti\DISC\DISC\obj\Debug\net7.0\ref\DISC.dll
 C:\Users\Aleksi\Desktop\Koodailuprojekti\DISC\DISC\obj\Debug\net7.0\DISC.csproj.AssemblyReference.cache
 C:\Users\Aleksi\Desktop\Koodailuprojekti\DISC\DISC\bin\Debug\net7.0\Newtonsoft.Json.dll
 C:\Users\Aleksi\Desktop\Koodailuprojekti\DISC\DISC\obj\Debug\net7.0\DISC.csproj.CopyComplete
+C:\Users\Aleksi\Desktop\Koodailuprojekti\DISC\DISC\obj\Debug\net7.0\DISC.RazorAssemblyInfo.cache
+C:\Users\Aleksi\Desktop\Koodailuprojekti\DISC\DISC\obj\Debug\net7.0\DISC.RazorAssemblyInfo.cs

@@ -1,12 +1,12 @@
 ﻿@page "/player/{playerName}"
+@using Newtonsoft.Json
 @{
-    string apiKey = "YOUR_API_KEY"; // Insert your actual API key here
+    string apiKey = "2fe7354686ed4b60834bc601bc7dc012"; // Insert your actual API key here
     var _bungieApiClient = new BungieApiClient(apiKey);
-    var playerName = @RouteData.Values["playerName"].ToString();
+    var playerName = RouteData.Values["playerName"].ToString();
     var playerInfo = await _bungieApiClient.GetPlayerInfoAsync(playerName);
-    var playerData = JsonConvert.DeserializeObject<PlayerResponse>(playerInfo);
-};
-
+    var playerData = JsonConvert.DeserializeObject<MyPlayerResponse>(playerInfo);
+}
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,4 +18,9 @@
     {
         <p>Membership ID: @playerData.Players[0].MembershipId</p>
     }
-   
+    else
+    {
+        <p>Player not found or an error occurred while retrieving data.</p>
+    }
+</body>
+</html>

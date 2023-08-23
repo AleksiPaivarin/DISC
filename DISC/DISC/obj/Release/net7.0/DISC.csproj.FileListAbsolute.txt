@@ -1,0 +1,8 @@
+C:\Users\Aleksi\Desktop\Koodailuprojekti\DISC\DISC\obj\Release\net7.0\DISC.csproj.AssemblyReference.cache
+C:\Users\Aleksi\Desktop\Koodailuprojekti\DISC\DISC\obj\Release\net7.0\DISC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aleksi\Desktop\Koodailuprojekti\DISC\DISC\obj\Release\net7.0\DISC.AssemblyInfoInputs.cache
+C:\Users\Aleksi\Desktop\Koodailuprojekti\DISC\DISC\obj\Release\net7.0\DISC.AssemblyInfo.cs
+C:\Users\Aleksi\Desktop\Koodailuprojekti\DISC\DISC\obj\Release\net7.0\DISC.csproj.CoreCompileInputs.cache
+C:\Users\Aleksi\Desktop\Koodailuprojekti\DISC\DISC\obj\Release\net7.0\DISC.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Aleksi\Desktop\Koodailuprojekti\DISC\DISC\obj\Release\net7.0\DISC.RazorAssemblyInfo.cache
+C:\Users\Aleksi\Desktop\Koodailuprojekti\DISC\DISC\obj\Release\net7.0\DISC.RazorAssemblyInfo.cs
