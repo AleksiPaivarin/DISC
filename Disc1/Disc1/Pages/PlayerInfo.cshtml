@@ -1,0 +1,45 @@
+﻿@page "/player/{playerName}"
+@using Newtonsoft.Json
+@{
+    Layout = null; // Estää sivupohjan käytön tällä sivulla
+}
+
+@functions {
+    private async Task<MyPlayerResponse> GetPlayerInfoAsync(string playerName)
+    {
+        string apiKey = "2fe7354686ed4b60834bc601bc7dc012";
+        BungieApiClient bungieApiClient = new BungieApiClient(apiKey);
+
+        var playerInfo = await bungieApiClient.GetPlayerInfoAsync(playerName);
+        var playerData = JsonConvert.DeserializeObject<MyPlayerResponse>(playerInfo);
+        return playerData;
+    }
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Player Information</title>
+</head>
+<body>
+    <h1>Player Information</h1>
+    @if (!string.IsNullOrEmpty(RouteData.Values["playerName"]?.ToString()))
+    {
+        var playerName = RouteData.Values["playerName"].ToString();
+        var playerData = await GetPlayerInfoAsync(playerName);
+
+        @if (playerData != null && playerData.Players.Count > 0)
+        {
+            <p>Membership ID: @playerData.Players[0].MembershipId</p>
+        }
+        else
+        {
+            <p>Player not found or an error occurred while retrieving data.</p>
+        }
+    }
+    else
+    {
+        <p>Player name not provided.</p>
+    }
+</body>
+</html>
