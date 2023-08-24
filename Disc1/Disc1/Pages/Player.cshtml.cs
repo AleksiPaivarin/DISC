@@ -17,10 +17,16 @@ namespace YourNamespace.Pages
 
         public async Task OnGetAsync(string playerName)
         {
-            string playerInfo = await _bungieApiClient.GetPlayerInfoAsync(playerName);
-            PlayerData = JsonConvert.DeserializeObject<MyPlayerResponse>(playerInfo);
+            PlayerInfoResponse playerResponse = await _bungieApiClient.GetPlayerInfoAsync(playerName);
+            PlayerData = playerResponse?.Players.FirstOrDefault(); // No CS0029 error now
         }
 
-        public MyPlayerResponse PlayerData { get; private set; }
+
+        public PlayerInfoResponse PlayerData { get; set; }
+
+        public void OnGet()
+        {
+            // Code to fetch and populate PlayerData
+        }
     }
 }

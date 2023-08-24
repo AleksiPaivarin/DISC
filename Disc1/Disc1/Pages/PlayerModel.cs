@@ -1,6 +1,14 @@
-﻿using System.Collections.Generic;
+﻿using Microsoft.AspNetCore.Mvc.RazorPages;
 
-public class PlayerModel
+namespace YourNamespace.Pages
 {
-    public MyPlayerResponse PlayerData { get; set; }
+    public class Playermodel : PageModel
+    {
+        public PlayerInfoResponse PlayerData { get; set; }
+
+        public void OnGet()
+        {
+            // Initialize PlayerData or perform any necessary operations here
+        }
+    }
 }

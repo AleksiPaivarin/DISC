@@ -1,40 +1,47 @@
 ﻿@page "/player/{playerName}"
 @using Newtonsoft.Json
 @{
-    Layout = null; // Estää sivupohjan käytön tällä sivulla
+    Layout = null; // Prevents the use of layout for this page
 }
 
 @functions {
-    private async Task<MyPlayerResponse> GetPlayerInfoAsync(string playerName)
+    private async Task<PlayerInfoResponse?> GetPlayerInfoAsync(string playerName)
     {
         string apiKey = "2fe7354686ed4b60834bc601bc7dc012";
         BungieApiClient bungieApiClient = new BungieApiClient(apiKey);
 
         var playerInfo = await bungieApiClient.GetPlayerInfoAsync(playerName);
-        var playerData = JsonConvert.DeserializeObject<MyPlayerResponse>(playerInfo);
-        return playerData;
+        return playerInfo;
     }
 }
 
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Player Information</title>
 </head>
 <body>
     <h1>Player Information</h1>
-    @if (!string.IsNullOrEmpty(RouteData.Values["playerName"]?.ToString()))
+    @if (!string.IsNullOrEmpty(RouteData.Values["PisWeasel"]?.ToString()))
     {
-        var playerName = RouteData.Values["playerName"].ToString();
-        var playerData = await GetPlayerInfoAsync(playerName);
+        var playerName = RouteData.Values["PisWeasel"].ToString();
 
-        @if (playerData != null && playerData.Players.Count > 0)
+        try
         {
-            <p>Membership ID: @playerData.Players[0].MembershipId</p>
+            var playerData = await GetPlayerInfoAsync(playerName);
+            if (playerData != null && playerData.Players != null && playerData.Players.Count > 0)
+            {
+                <p>Membership ID: @playerData.Players[0].MembershipId</p>
+            }
+            else
+            {
+                <p>Player not found or an error occurred while retrieving data.</p>
+            }
         }
-        else
+        catch (Exception ex)
         {
-            <p>Player not found or an error occurred while retrieving data.</p>
+            <p>Error: @ex.Message</p>
         }
     }
     else

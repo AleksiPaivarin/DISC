@@ -1,30 +1,42 @@
 ﻿@page "/player/{playerName}"
-@using System.Threading.Tasks;
-@using Microsoft.AspNetCore.Mvc;
-@using Microsoft.AspNetCore.Mvc.RazorPages;
-@using System.Net.Http;
-@using Newtonsoft.Json;
-@{
-    string apiKey = "2fe7354686ed4b60834bc601bc7dc012"; // Insert your actual API key here
-    var _bungieApiClient = new BungieApiClient(apiKey);
-    var playerName = RouteData.Values["playerName"].ToString();
-    var playerInfo = await _bungieApiClient.GetPlayerInfoAsync(playerName);
-    var playerData = JsonConvert.DeserializeObject<MyPlayerResponse>(playerInfo);
-}
+@model YourNamespace.Pages.PlayerModel
+
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Player Information</title>
-</head>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Player Information</title>
+    </head>
+    
 <body>
     <h1>Player Information</h1>
-    @if (playerData != null && playerData.Players.Count > 0)
+    @if (!string.IsNullOrEmpty(RouteData.Values["playerName"]?.ToString()))
     {
-        <p>Membership ID: @playerData.Players[0].MembershipId</p>
+        var playerName = RouteData.Values["playerName"].ToString();
+
+        try
+        {
+            if (Model.PlayerData != null && Model.PlayerData.Players.Count > 0)
+            {
+                <p class="membership-info">Membership ID: @Model.PlayerData.Players[0].MembershipId</p>
+            }
+            else
+            {
+                <p class="error-message">Player not found or an error occurred while retrieving data.</p>
+            }
+        }
+        catch (Exception ex)
+        {
+            <p class="error-message">Error: @ex.Message</p>
+        }
+    }
+
     }
     else
     {
-        <p>Player not found or an error occurred while retrieving data.</p>
+        <p class="info-message">Player name not provided.</p>
     }
 </body>
 </html>
+<link rel="stylesheet" href="/css/styles.css" />

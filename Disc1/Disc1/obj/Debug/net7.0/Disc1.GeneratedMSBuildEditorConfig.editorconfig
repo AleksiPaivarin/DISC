@@ -16,14 +16,6 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Aleksi\Desktop\Koodailuprojekti\Disc1\Disc1
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Aleksi/Desktop/Koodailuprojekti/Disc1/Disc1/Pages/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Aleksi/Desktop/Koodailuprojekti/Disc1/Disc1/Pages/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Aleksi/Desktop/Koodailuprojekti/Disc1/Disc1/Pages/Player.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGxheWVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -32,20 +24,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGxheWVySW5mby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aleksi/Desktop/Koodailuprojekti/Disc1/Disc1/Pages/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Aleksi/Desktop/Koodailuprojekti/Disc1/Disc1/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Aleksi/Desktop/Koodailuprojekti/Disc1/Disc1/Pages/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Aleksi/Desktop/Koodailuprojekti/Disc1/Disc1/Pages/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Aleksi/Desktop/Koodailuprojekti/Disc1/Disc1/Pages/Shared/_Layout.cshtml]
