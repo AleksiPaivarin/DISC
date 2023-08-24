@@ -23,9 +23,9 @@
 </head>
 <body>
     <h1>Player Information</h1>
-    @if (!string.IsNullOrEmpty(RouteData.Values["PisWeasel"]?.ToString()))
+    @if (!string.IsNullOrEmpty(RouteData.Values["playerName"]?.ToString()))
     {
-        var playerName = RouteData.Values["PisWeasel"].ToString();
+        var playerName = RouteData.Values["playerName"].ToString();
 
         try
         {

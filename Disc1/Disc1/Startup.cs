@@ -26,7 +26,7 @@ app.Run(async context =>
 {
     var bungieApiClient = context.RequestServices.GetRequiredService<BungieApiClient>();
 
-    string playerName = "PisWeasel";
+    string playerName = "playerName";
     var playerInfo = await bungieApiClient.GetPlayerInfoAsync(playerName);
 
     if (playerInfo != null && playerInfo.Players.Count > 0)
