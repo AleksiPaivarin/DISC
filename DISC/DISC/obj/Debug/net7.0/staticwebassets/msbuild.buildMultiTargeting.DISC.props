@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\DISC.props" />
-</Project>

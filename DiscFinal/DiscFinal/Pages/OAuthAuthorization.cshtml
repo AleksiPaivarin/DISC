@@ -1,0 +1,24 @@
+﻿@page
+@model OAuthAuthorizationModel
+@{
+    Layout = "_Layout";
+}
+
+
+<script>
+    function redirectToOAuth() {
+        var authorizationUrl = '@Model.GetAuthorizationUrl()';
+        window.location.href = authorizationUrl;
+    }
+</script>
+
+
+<button onclick="redirectToOAuth()">Login with OAuth</button>
+
+@functions {
+    private void RedirectToOAuth()
+    {
+        var authorizationUrl = Model.GetAuthorizationUrl();
+        Response.Redirect(authorizationUrl);
+    }
+}

@@ -1,0 +1,87 @@
+/* _content/DiscFinal/Pages/Shared/_Layout.cshtml.rz.scp.css */
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand[b-guhe9nopb9] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-guhe9nopb9] {
+  color: #0077cc;
+}
+
+.btn-primary[b-guhe9nopb9] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-guhe9nopb9], .nav-pills .show > .nav-link[b-guhe9nopb9] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-guhe9nopb9] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-guhe9nopb9] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-guhe9nopb9] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-guhe9nopb9] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-guhe9nopb9] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}
+/* styles.css */
+
+/* Set background color for the body */
+body[b-guhe9nopb9] {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header */
+h1[b-guhe9nopb9] {
+    color: #333;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Style the paragraphs */
+p[b-guhe9nopb9] {
+    color: #666;
+    padding: 10px;
+    text-align: center;
+}
+
+.membership-info[b-guhe9nopb9] {
+    color: green;
+    font-size: 18px;
+}
+
+.error-message[b-guhe9nopb9] {
+    color: red;
+    font-size: 16px;
+}
+
+.info-message[b-guhe9nopb9] {
+    color: blue;
+    font-size: 16px;
+}
