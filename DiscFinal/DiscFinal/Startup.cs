@@ -14,7 +14,7 @@ namespace YourNamespace
             builder.Services.AddRazorPages();
             builder.Services.AddSingleton<OAuthService>();
             builder.Services.AddSingleton<BungieApiClient>(provider => new BungieApiClient("2fe7354686ed4b60834bc601bc7dc012"));
-            ;
+            
 
             var app = builder.Build();
 
