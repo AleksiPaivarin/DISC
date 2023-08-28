@@ -20,8 +20,8 @@ public class OAuthAuthorizationModel : PageModel
     {
         using (var httpClient = new HttpClient())
         {
-            var apiKey = "your_api_key_here";
-            var apiUrl = "https://www.bungie.net/Platform/[your_endpoint]";
+            var apiKey = "2fe7354686ed4b60834bc601bc7dc012";
+            var apiUrl = "https://www.bungie.net/Platform/Destiny2/SearchDestinyPlayer/-1/";
 
             // Add the X-API-Key header to the request
             httpClient.DefaultRequestHeaders.Add("X-API-Key", apiKey);
