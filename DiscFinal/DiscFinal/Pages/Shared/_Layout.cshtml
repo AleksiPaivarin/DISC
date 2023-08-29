@@ -7,12 +7,16 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/DiscFinal.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-<body>
+<body style="background-color: lightblue;">
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-black border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/OAuthAuthorization">DiscFinal</a>
+                <img src="data:image/png;base64,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" >
+               
+                <a class="navbar-brand" asp-area="" asp-page="/OAuthAuthorization">DISC</a>
+                
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -20,15 +24,17 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         
-
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Player">Player</a>
+                            <a class="nav-link text-white" asp-area="" asp-page="/Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/OAuthAuthorization">OAuth</a>
+                            <a class="nav-link text-white" asp-area="" asp-page="/Player">Player</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/PlayerInfo">Player Info</a>
+                            <a class="nav-link text-white" asp-area="" asp-page="/OAuthAuthorization">OAuth</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-page="/PlayerInfo">Player Info</a>
                         </li>
                         
                     </ul>

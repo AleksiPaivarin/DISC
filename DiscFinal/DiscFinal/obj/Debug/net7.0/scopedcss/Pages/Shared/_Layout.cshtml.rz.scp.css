@@ -46,24 +46,42 @@ button.accept-policy[b-guhe9nopb9] {
   white-space: nowrap;
   line-height: 60px;
 }
-/* styles.css */
 
-/* Set background color for the body */
+
 body[b-guhe9nopb9] {
-    background-color: #f2f2f2;
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* Style the header */
+
+.navbar[b-guhe9nopb9] {
+    background-color: blue;
+    overflow: hidden;
+}
+.logo[b-guhe9nopb9] {
+    float: left;
+    margin: 8px 16px;
+}
+    .navbar a[b-guhe9nopb9] {
+        float: left;
+        display: block;
+        color: blue;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+h1[b-guhe9nopb9], p[b-guhe9nopb9] {
+    margin: 20px;
+}
+
 h1[b-guhe9nopb9] {
     color: #333;
     margin-top: 20px;
     text-align: center;
 }
 
-/* Style the paragraphs */
+
 p[b-guhe9nopb9] {
     color: #666;
     padding: 10px;
